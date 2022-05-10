@@ -1,0 +1,138 @@
+@import "reset";
+@import "variables";
+
+/* These are the site wide css imports*/
+@import "../../components/Header/header";
+@import "../../components/Header/mobilemenu";
+@import "../../components/Footer/footer";
+
+/* Here are the Landing page css imports*/
+@import "../../components/LandingPage/HeroDisplay/heroDisplay";
+@import "../../components/LandingPage/HeroDisplay/DealFinder/flightform";
+
+@import "../../components/LandingPage/ChoiceBanner/choice-banner";
+
+/* Here are the flights page css imports*/
+@import "../../components/FlightsPage/flightsPage";
+@import "../../components/FlightsPage/flight";
+@import "../../components/FlightsPage/flightSearchHeader";
+@import "../../components/FlightsPage/flightsFilter";
+
+/* Here css overides */
+*, body, html {
+  font-family: 'Roboto', sans-serif;
+}
+.row-override{
+  padding: 0;
+  margin: 0;
+}
+.col-override{
+  padding: 0;
+  margin: 0;
+}
+.isActive{
+  display: block !important;
+}
+.isFlexActive{
+  display: flex !important;
+}
+
+.row {
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 560px) {
+  .flight-container{
+    flex-direction: column;
+    .flight-price{
+      border: 1px dotted grey;
+      border-left:none;
+    }
+ }
+ .flight-search-header .search-dates .search-date {
+  justify-content: flex-end;
+}
+ .flight-search-header .search-dates {
+   flex-direction: column;
+ }
+ .flight-container .flight-time-and-locations .trip .flight-details {
+  justify-content: center;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 992px;
+  }
+  #MobileMenu{
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  //Header CSS Media Queries
+  .category-links{
+    display: none !important;
+  }
+  .account-links{
+    display: none !important;
+  }
+  #header-hamburger-icon{
+    display: block;
+  }
+  .flights-filter{
+    display: none;
+  }
+  .flight-sorter{
+    margin: 0 15px;
+  }
+  #flights-row{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .flight-container{
+    margin-right: 15px;
+  }
+  .flights-results{
+    width:100%;
+  }
+  .site-footer .footer-container .footer-row1 .footer-col {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px){
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 992px){
+  .recommended-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1050px){
+  .recommended-item {
+    margin-bottom: 20px;
+  }
+  .content {
+    width: 100%;
+}
+  .right-ads{display: none;}
+}
+@media (min-width: 1200px){
+  .container {
+    max-width: 1280px;
+  }
+}
+
+

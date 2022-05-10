@@ -1,0 +1,210 @@
+$formColPadding: 10px;
+
+.flight-form{
+  .container{
+    form{
+      .trip-type{
+        margin-top:40px;
+        display: flex;
+        flex-direction: row;
+        padding-left: $formColPadding;
+        .trip-type-label-first{
+          padding-left: 0;
+        }
+        label{
+          display: flex;
+          align-items: center;
+          margin-right: 1.125rem;
+          margin-bottom: .75rem;
+          color: #fff;
+          font-size: .75rem;
+          cursor: pointer;
+        
+          padding-left: 1.5rem;
+          .trip-type-input{
+          }
+          span{
+            margin-left: 14px;
+            font-size: 1.1rem;
+          }
+        }
+        .radio-circle{}
+      }
+      .inner-input-container{
+        display: flex;
+        color:white;
+        
+        .row{
+          width: 100%;
+          margin-right: 0px;
+          margin-left: 0px;
+        }
+        .from-and-to-input-container{
+          display: flex;
+          width: 50%;
+          padding: 0;
+          .from-input-container{
+            padding: 0;
+            width: 100%;
+            .from-input{
+              padding: 0 10px;
+              label{
+                display: block;
+                padding: 0;
+              }
+              input{
+                height: 45px;
+                border-radius: .4rem .4rem .4rem .4rem;
+                width: 100%;
+                margin-bottom: 12px;
+              }
+            }
+            label{
+              padding-left: $formColPadding;
+              margin-bottom: 15px;
+              span{
+                padding-left: $formColPadding;
+                
+              }
+            }
+          }
+        
+          .to-input-container{
+            width: 100%;
+            .to-input{
+              padding: 0 10px;
+              label{
+                display: block;
+                padding: 0;
+                span{
+                  margin-left:10px;
+                }
+              }
+              input{
+                height: 45px;
+                border-radius: .4rem .4rem .4rem .4rem;
+                margin-bottom: 12px;
+                width: 100%;
+              }
+            }
+            label{
+              padding-left: $formColPadding;
+              margin-bottom: 15px;
+              span{
+                padding-left: $formColPadding;
+                
+              }
+            }
+          }
+        }
+        .depart-return-container{
+          display: block;
+          width: 25%;
+          padding: 0;
+          .depart{
+            display: inline-block;
+            width: 50%;
+            padding: 0 10px;
+            border-radius: .4rem .4rem .4rem .4rem;
+            label{
+              display: block;
+              margin-bottom: 15px;
+            }
+            
+            .react-datepicker-wrapper{
+              width: 100%;
+              .react-datepicker__input-container{
+                width: 100%;
+                input{
+                  height: 45px;
+                  margin-bottom: 12px;
+                  width: 100%;
+                  border-radius: .4rem .4rem .4rem .4rem;
+                }
+              }
+            }
+          
+          }
+          .return{
+            display: inline-block;
+            width: 50%;
+            padding: 0 10px;
+            label{
+              display: block;
+              margin-bottom: 15px;
+            }
+            
+            .react-datepicker-wrapper{
+              width: 100%;
+              .react-datepicker__input-container{
+                width: 100%;
+                input{
+                  height: 45px;
+                  margin-bottom: 12px;
+                  width: 100%;
+                  border-radius: .4rem .4rem .4rem .4rem;
+                }
+              }
+            }
+            button{
+              height: 45px;
+              margin-bottom: 5px;
+              width: 100%;
+            }
+          }
+          .non-stop-flights-container{
+            display: block;
+            label{
+              padding-left: $formColPadding;
+              margin-bottom: 15px;
+              span{
+                padding-left: $formColPadding;
+                
+              }
+            }
+          }
+        }
+        .num-passengers-container{
+          padding: 0 10px;
+          label{
+            margin-bottom: 15px;
+          }
+          select{
+            width: 100%;
+            height: 45px;
+          
+            margin-bottom: 12px;
+            width: 100%;
+          }
+          button{
+          }
+        }
+      }
+      .search-btn-wrapper{
+        display: flex;
+        justify-content: flex-end;
+        margin: 0 $formColPadding;
+        .search-btn{
+          padding: .375rem 1.5rem;
+          border-radius: 1.3125rem;
+          border-color: #00d775;
+          font-size: 1.5rem;
+          color:white;
+          line-height: 1.875rem;
+          user-select: none;
+          outline: none;
+          font-weight: 500;
+          letter-spacing: .25px;
+          background-color: #00d775;
+    cursor: pointer;
+          .fas.fa-arrow-right{
+            margin-left: 8px;
+            position: relative;
+            top:2px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
